@@ -1,1 +1,1 @@
-source /root/emsdk_env.sh
+source ~/emsdk/emsdk_env.sh
