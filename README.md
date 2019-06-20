@@ -36,3 +36,13 @@ Go to `localhost:8000` and view the glory
   * Attempt to replace the GUI framework in ROS tools
 * https://vis.gl/
   * a fully fledged robotics web-based visualizer tool suite - from Uber
+
+## Colcon foray
+
+Creates a JS output that links against and calls another ament package.
+
+```
+colcon build --cmake-args -DCMAKE_TOOLCHAIN_FILE=/root/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake -DBUILD_TESTING=OFF --packages-up-to rviz_em --packages-ignore osrf_testing_tools_cpp
+
+node build/rviz_em/rviz_em.js
+```

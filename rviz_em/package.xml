@@ -1,0 +1,16 @@
+<package format="2">
+  <name>rviz_em</name>
+  <version>0.0.1</version>
+  <description>Test application attempting to approach an Emscripten-compiled RViz</description>
+  <maintainer email="emerson.b.knapp@gmail.com">Emerson Knapp</maintainer>
+  <author>Emerson Knapp</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rcutils</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
