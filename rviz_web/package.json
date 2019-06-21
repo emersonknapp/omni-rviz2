@@ -1,0 +1,29 @@
+{
+  "name": "rviz_web",
+  "version": "1.0.0",
+  "description": "Browser frontend for RViz",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "react-dom": "^16.8.6",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "author": "Emerson Knapp",
+  "license": "BSD-3-Clause"
+}

@@ -1,0 +1,16 @@
+
+<package format="2">
+  <name>rviz_web</name>
+  <version>0.0.1</version>
+  <description>Browser frontend for RViz</description>
+  <maintainer email="emerson.b.knapp@gmail.com">Emerson Knapp</maintainer>
+  <author>Emerson Knapp</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_webpack</buildtool_depend>
+  <depend>rviz_em</depend>
+
+  <export>
+    <build_type>ament_webpack</build_type>
+  </export>
+</package>
