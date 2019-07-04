@@ -2,30 +2,22 @@
 
 Experimental approach to a modularized RVIZ2 that can run natively or in the browser
 
-## As of Today
+## Project structure
 
-This builds OGRE 1.12.0 via Emscripten, verifying that tthis build is possible at all. This build may be missing components, but the demo basically runs.
+### rviz_em
+Emscripten bundling of rviz into a single JS file
 
-Would not successfully build out of the box with prior OGRE versions - this may cause
-
-## Build
-
-Dockerfile installs all dependencies and attempts to build a demonstration of some of the tech pieces.
+### rviz_web
+node+webpack+react project that loads Emscripten-compiled OGRE sample. Installation/building is not streamlined yet.
 
 ```
-docker build . -t omni-rviz2
+npm install
+npm build
+cp $ROS_WS/build/rviz_ogre_vendor/ogre-master-ca665a6-prefix/src/ogre-master-ca665a6-build/bin/EmscriptenSample.* dist/
+npm start
 ```
 
-## Run Demo
-
-```
-docker run -it -p 8000:8000 omni-rviz2
-cd ogre/bin
-python3 -m http.server 8000
-```
-
-Go to `localhost:8000` and view the glory
-
+Direct your browser to localhost:8080 to see the OGRE demo.
 
 
 ## Existing Works and References
