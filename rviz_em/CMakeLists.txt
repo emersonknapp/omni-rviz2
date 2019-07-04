@@ -26,23 +26,18 @@ ament_export_dependencies(rcutils)
 ament_target_dependencies(rviz_em
   rcutils
 )
+
 # TODO(emersonknapp) why is this bad? this adds `-l` option to emcc command, which it doesn't like
 # target_link_libraries(rviz_em rcutils)
 
-ament_export_include_directories(include)
+# ament_export_include_directories(include)
 
 install(
   TARGETS rviz_em
   EXPORT rviz_em
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
-  INCLUDES DESTINATION include
   RUNTIME DESTINATION bin
-)
-
-install(
-  DIRECTORY include/
-  DESTINATION include
 )
 
 ament_package()
