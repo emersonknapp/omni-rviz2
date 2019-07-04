@@ -25,6 +25,7 @@ target_include_directories(rviz_em
 ament_export_dependencies(rcutils)
 ament_target_dependencies(rviz_em
   rcutils
+  rviz_rendering
 )
 
 # TODO(emersonknapp) why is this bad? this adds `-l` option to emcc command, which it doesn't like
