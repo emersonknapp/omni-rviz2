@@ -25,9 +25,11 @@ Direct your browser to localhost:8080 to see the OGRE demo.
 * http://robotwebtools.org/
   * Javascript bindings for ROS and some web-native tooling like a partial visualizer using rosbridge protocol
 * https://github.com/lucasw/imgui_ros
-  * Attempt to replace the GUI framework in ROS tools
+  * Attempt to replace the GUI framework in ROS tools with an immediate-mode one
 * https://vis.gl/
-  * a fully fledged robotics web-based visualizer tool suite - from Uber
+  * a from-scratch robotics web-based visualizer tool suite - from Uber
+* https://webviz.io/
+  * Webviz - another built-from-scratch attempt to visualize ros data. Currently supports rosbag playback
 
 ## Colcon foray
 
